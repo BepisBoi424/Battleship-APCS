@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+
 public class Ship {
-    public static int ships;
+    // Instance variables: Arraylist for ships and size of ship
+    private static ArrayList<Ship> ships;
+    private int size;
 
-
-    public void Carrier() {
-        ships += 1;
+    // Default constructor
+    public Ship(int size) {
+        this.size = size;
+        ships.add(this);
     }
 
-    
 }
